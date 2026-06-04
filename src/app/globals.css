@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 135 25% 97%; /* Pale Mint Frost #F5F9F6 */
+    --foreground: 144 50% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 144 50% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 144 50% 10%;
+    --primary: 144 50% 35%; /* Botanical Forest Green #2D864B */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 135 20% 90%;
+    --secondary-foreground: 144 50% 20%;
+    --muted: 135 20% 92%;
+    --muted-foreground: 144 20% 40%;
+    --accent: 104 33% 45%; /* Meadow Lime #62994D */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 144 20% 88%;
+    --input: 144 20% 88%;
+    --ring: 144 50% 35%;
+    --radius: 1rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+}
+
+.tab-bar-item {
+  @apply flex flex-col items-center justify-center flex-1 py-2 text-muted-foreground transition-all duration-300;
+}
+
+.tab-bar-item.active {
+  @apply text-primary;
+}
+
+.card-shadow {
+  box-shadow: 0 4px 20px -2px rgba(45, 134, 75, 0.08);
+}
+
+.home-category-btn {
+  @apply flex flex-col items-center justify-center p-4 bg-white rounded-2xl card-shadow border border-transparent hover:border-primary/20 transition-all active:scale-95;
+}
