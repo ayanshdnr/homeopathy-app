@@ -2,7 +2,7 @@ import type {Metadata} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'HealPulse - Homeopathic Companion',
+  title: 'Homeopathy - Homeopathic Companion',
   description: 'Your trusted homeopathic guide for natural healing.',
 };
 
